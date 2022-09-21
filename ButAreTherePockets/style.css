@@ -1,22 +1,45 @@
 body {
+    background-color: whitesmoke;
     padding: 20px;
     font-family: 'Mulish', sans-serif;
+
 }
 
-.retailer_section {
+h1 {
+    font-weight: bold;
+
+}
+
+
+.search_section {
     width: 100%;
-    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 }
 
-.retailer_search {
-    width: 49%;
+.search_label {}
+
+.search_url {
+    padding-inline: 20px;
+
+}
+
+.search_dropdown{
+
+}
+.search_button {
+    
+}
+
+
+.search_button {
+    padding-inline: 20px;
+    width: 150px;
     display: inline-block;
 }
 
-.retailer_grade {
-    width: 49%;
-    display: inline-block;
-}
 
 .garment_section {
     width: 100%;
@@ -24,43 +47,62 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.garment_img_wrapper {
+    background-color: bisque;
+    width: 49%;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-.garment_grade {
-    width: 10%;
-    display: inline-block;
+.garment_score {
+    display: flex;
+    justify-content: center;
 }
 
 .garment_img {
-    width: 40%;
-    max-height: fit-content;
-    display: inline;
+    max-height: min-content;
 }
 
 .garment_criteria_all {
-    width: 39%;
+    background-color: #8e8dbe;
+    width: 49%;
     padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
 
 }
-
+/* .garment_criteria_title{
+  font-size: large;
+  font-weight: bolder; */
+/* } */
 .garment_criteria_item {
     display: flex;
     flex-direction: row;
+    align-items: center;
 
 
 }
 
 .pass_fail_icon {
-    width: 6%;
-    display: inline;
+    /* max-width: 6%; */
+    min-width: 15px;
+    max-height: 45px;
 }
 
 .pass_fail_desc {
 
-    display: inline-flex;
+    display: flex;
+    font-weight: bolder;
+    font-size: large;
+    padding: 20px;
+    
 }
 
-*/

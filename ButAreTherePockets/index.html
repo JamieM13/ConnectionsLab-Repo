@@ -16,30 +16,58 @@
 <body>
     <h1>But Are There Pockets?</h1>
     <h2>a Bechdel test for clothing</h2>
-    <section class="retailer_section">
-        <p class="retailer_search"> Enter online retailer here. Go</p>
-        <p class="retailer_grade"> Grade for JCrew = FAIL</p>
+    <section class="search_section">
+        <div class="search_label">
+            <label for="search_dropdown" class="search_label"> Select a product:</label>
+        </div>
+        <!-- <div class="search_url">
+            <input type="text" id="search_url" name="search_url" size="100%">
+        </div> -->
+        <div class="search_dropdown" name="search_dropdown">
+            <select name="search_dropdown" id="search_dropdown">
+                <option value=" "> --Please choose an option-- </option>
+                <option value="Dovetail_Workwear_Britt_Jeans"> Dovetail_Workwear_Britt_Jeans</option>
+                <option value="JCrew_Pixie_Pant"> JCrew_Pixie_Pant </option>
+                <option value="Athleta_Hustle_Shorts"> Athleta_Hustle_Shorts</option>
+                <option value="Everlane_Curvy_Jeans"> Everlane_Curvy_Jeans</option>
+            </select>
+        </div>
+        <div class="search_button">
+            <button type="button" id="button">
+                Grade this product
+            </button>
+        </div>
+
     </section>
     <section class="garment_section">
-        <p class="garment_grade"> FAIL</p>
-        <img class="garment_img" src="JCrewPants.jpeg" alt="cat" />
+        <!-- <div class="garment_grade">
+            <p class="garment_grade"> FAIL</p>
+        </div> -->
+        <div class="garment_img_wrapper">
+            <!-- <h2 class="garment_score"> Pass/Fail/Score</h2> -->
+            <label for="garment_score" class="garment_score" id="garmentScore">Score</label>
+            <img class="garment_img" id="garmentImg" src="https://placekitten.com/400/400" alt="cat" />
+
+        </div>
+
         <div class="garment_criteria_all">
+            <h2 class="garment_criteria_title"> Scoring Criteria</h2>
             <div class="garment_criteria_item">
                 <img class="pass_fail_icon" src="x-mark-512.png" alt="red x" />
-                <p class="pass_fail_desc"> Has pockets</p>
+                <p class="pass_fail_desc"> Does it have pockets?</p>
             </div>
             <div class="garment_criteria_item">
                 <img class="pass_fail_icon" src="x-mark-512.png" alt="red x" />
-                <p class="pass_fail_desc"> Pockets hold a standard smart phone</p>
+                <p class="pass_fail_desc"> Do the pockets hold a smart phone?</p>
             </div>
             <div class="garment_criteria_item">
                 <img class="pass_fail_icon" src="x-mark-512.png" alt="red x" />
-                <p class="pass_fail_desc"> Women of XXXdescriptorXXX are represented</p>
+                <p class="pass_fail_desc"> Are women of XXXdescriptorXXX represented?</p>
             </div>
 
         </div>
     </section>
-
+    <script src="app.js"></script>
 </body>
 
 </html>
