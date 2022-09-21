@@ -51,7 +51,7 @@ h1 {
 }
 
 .garment_img_wrapper {
-    background-color: bisque;
+    background-color: #ffd670;;
     width: 49%;
     padding: 20px;
 
@@ -61,6 +61,8 @@ h1 {
 }
 
 .garment_score {
+    font-size: xx-large;
+    font-weight: bold;
     display: flex;
     justify-content: center;
 }
@@ -70,19 +72,18 @@ h1 {
 }
 
 .garment_criteria_all {
-    background-color: #8e8dbe;
+    background-color: #4c86a8;
     width: 49%;
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
-
+    /* justify-content: center; */
 }
-/* .garment_criteria_title{
-  font-size: large;
-  font-weight: bolder; */
-/* } */
+.garment_criteria_title{
+  font-size: xx-large;
+  font-weight: bold; 
+}
+
 .garment_criteria_item {
     display: flex;
     flex-direction: row;

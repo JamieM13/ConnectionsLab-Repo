@@ -3,40 +3,51 @@
 
 let dropdown;
 dropdown = document.getElementById('search_dropdown');
-console.log(dropdown.selectedIndex);
+// console.log(dropdown.selectedIndex);
 
 let garmentImg;
 garmentImg = document.getElementById('garmentImg');
 //listen to event dropdown selection
+//show the right picture for an array
 
 dropdown.addEventListener("change", displayGarment);
 
 function displayGarment(){
-    console.log(dropdown.selectedIndex);
-    console.log(garmentArray[dropdown.selectedIndex].src);
+    // console.log(dropdown.selectedIndex);
+    // console.log(garmentArray[dropdown.selectedIndex].src);
     garmentImg.src = garmentArray[dropdown.selectedIndex].src;
     garmentScore.innerHTML = "Does It Pass?";
 }
-//show the right picture for an array
+
 
 
 //id and select button
-
 let button;
 button = document.getElementById('button');
-console.log("button");
-
+// console.log("button");
 let garmentScore;
 garmentScore = document.getElementById('garmentScore');
 console.log("garmentscorefound");
+
 //listen to event click on button
 button.addEventListener("click", displayCriteria);
 
-
+//change the score to pass/fail
 function displayCriteria() {
     console.log("display_Criteria", garmentArray[dropdown.selectedIndex].innerHTML);
     garmentScore.innerHTML = garmentArray[dropdown.selectedIndex].score;
+
 };
+
+//listen for mouseover event
+garmentScore.addEventListener("mouseover", displayScoreOver);
+//display pass/fail percentage score
+
+function displayScoreOver() {
+    console.log("pass/fail")
+}
+
+
 
 let score;
 let pockets;
