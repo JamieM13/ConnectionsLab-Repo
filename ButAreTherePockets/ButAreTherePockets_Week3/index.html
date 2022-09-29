@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are There Pockets</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    </link>
+</head>
+
+<body>
+    <h1>But Are There Pockets?</h1>
+    <h2>a Bechdel test for clothing</h2>
+    <section class="search_section">
+        <div class="search_label">
+            <label for="search_dropdown" class="search_label"> Select a product:</label>
+        </div>
+        <!-- <div class="search_url">
+            <input type="text" id="search_url" name="search_url" size="100%">
+        </div> -->
+        <div class="search_dropdown" name="search_dropdown">
+            <select name="search_dropdown" id="search_dropdown">
+                <option value=" "> --Please choose an option-- </option>
+                <option value="Dovetail_Workwear_Britt_Jeans"> Dovetail_Workwear_Britt_Jeans</option>
+                <option value="JCrew_Pixie_Pant"> JCrew_Pixie_Pant </option>
+                <option value="Athleta_Hustle_Shorts"> Athleta_Hustle_Shorts</option>
+                <option value="Everlane_Curvy_Jeans"> Everlane_Curvy_Jeans</option>
+            </select>
+        </div>
+        <div class="search_button">
+            <button type="button" id="button">
+                Grade this product
+            </button>
+        </div>
+
+    </section>
+    <section class="garment_section" id="garmentWrapper">
+        <!-- <div class="garment_grade">
+            <p class="garment_grade"> FAIL</p>
+        </div> -->
+        <div class="garment_img_wrapper">
+            <!-- <h2 class="garment_score"> Pass/Fail/Score</h2> -->
+            <label for="garment_score" class="garment_score" id="garmentScore">Score</label>
+            <img class="garment_img" id="garmentImg" src="https://placekitten.com/400/400" alt="cat" />
+        </div>
+        <div class = "hover" id = "hover">
+            <h1 class = "hover_score" id = "hover_score"></h1>
+            <p class = "hover_link" id = "hover_score"></p>
+        </div>
+
+        <div class="garment_criteria_all">
+            <h2 class="garment_criteria_title"> Scoring Criteria</h2>
+            <div class="garment_criteria_item">
+                <img class="pass_fail_icon" id="pocketIcon" src="checkbox.png" alt="red x" />
+                <p class="pass_fail_desc"> Does it have pockets?</p>
+            </div>
+            <div class="garment_criteria_item">
+                <img class="pass_fail_icon" id="phoneIcon" src="checkbox.png" alt="red x" />
+                <p class="pass_fail_desc"> Do the pockets hold a smart phone?</p>
+            </div>
+            <div class="garment_criteria_item">
+                <img class="pass_fail_icon" id="repIcon" src="checkbox.png" alt="red x" />
+                <p class="pass_fail_desc"> Are women of XXXdescriptorXXX represented?</p>
+            </div>
+
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
